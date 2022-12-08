@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    
+    "name": "AdventOfScript",
+    "description": "With this extension, you can easily login on AdventOfScript !",
+    "version": "1.0",
+    
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "assets/images/icon.png"
+    },
+
+    "background": {
+        "service_worker": "workers/worker.js",
+        "type": "module"
+    },
+    
+    "permissions": [
+      "storage",
+      "tabs",
+      "unlimitedStorage",
+      "scripting",
+      "cookies"
+    ],
+
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
+  

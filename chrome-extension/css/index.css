@@ -1,0 +1,33 @@
+body {
+    position: relative;
+    margin: 0;
+    background: none;
+
+    min-width: 100%;
+
+    font-size: 1em;
+    white-space: nowrap;
+
+    font-family: "Source Code Pro", monospace;
+}
+
+/*  */
+
+#main {
+    padding: 0.75em;
+    background-color: #efefef;
+}
+
+/*  */
+
+a[href] {
+    color: #009900;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+a[href]:hover,
+a[href]:focus {
+    color: #99ff99;
+}
