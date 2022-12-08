@@ -2,11 +2,9 @@ console.log("[service worker]");
 
 // 
 
-function onAoSLoginRequest(callback) {
-    setTimeout(() => {
-        let check_request = fetch("http://localhost:1266")
-    }, 2000);
-}
+chrome.tabs.onActivated.addListener(activation_info => {
+    console.log(activation_info);
+});
 
 // 
 
